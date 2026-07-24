@@ -25,7 +25,7 @@ npx wrangler login
 npx wrangler deploy
 ```
 
-Live at `https://brahman-map.<your-subdomain>.workers.dev`.
+Live at `https://iambrahman-map.<your-subdomain>.workers.dev`.
 
 ## Preview locally
 

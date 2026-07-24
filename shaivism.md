@@ -136,5 +136,5 @@ This place-of-articulation logic is also why each element has a single-syllable 
 | Apas (water) | वं Vaṃ |
 | Prithvi (earth) | लं Laṃ |
 
-## Shiva Sutras
+## Further Reading
 Above readings are from Shiva sturas. These sutras can transform you in body, mind, and self-understanding, read **Shiva Sutras** by Ranjit Chaudhri to continue your journey.

@@ -1,4 +1,4 @@
-# Shaivism
+# Shiva Sutras
 *Aum Namah Shivaya*
 ## Foundational Points
 1. Your self is consciousness, not your body.

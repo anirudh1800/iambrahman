@@ -127,7 +127,7 @@
   <p class="hint">Click a node to fold or unfold · drag to pan · scroll to zoom</p>
   <ul class="tabs">
     <li><a href="/" class="active">Yatra</a></li>
-    <li><a href="/shaivism.html">Shaivism</a></li>
+    <li><a href="/shaivism.html">Shiva Sutras</a></li>
   </ul>
 </header>
 
@@ -148,6 +148,16 @@
         // A click opens a node's entire subtree, not one level at a time.
         // Ctrl+click (Cmd on Mac) inverts this, stepping down one level.
         window.markmap.defaultOptions.toggleRecursively = false;
+
+        // Recolor branch circles/links using the site palette instead of
+        // markmap's default D3 category colors.
+        window.markmap.defaultOptions.colorFreezeLevel = 1;
+        const palette = ['#A8322D', '#C9A24B', '#7C8B74', '#BFC4BB', '#8C4A3D'];
+        window.markmap.defaultOptions.color = (node) => {
+          const path = (node.state && node.state.path) || '0';
+          const branch = path.split('.')[1] ?? path.split('.')[0];
+          return palette[Number(branch) % palette.length];
+        };
       },
     },
   };

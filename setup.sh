@@ -1,0 +1,1 @@
+npm install -D wrangler          # optional; npx will fetch it otherwise

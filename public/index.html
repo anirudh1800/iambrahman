@@ -67,9 +67,43 @@
 
   .hint { margin: 0.9rem 0 0; font-size: 0.78rem; color: var(--ink-soft); }
 
-  main { flex: 1 1 auto; min-height: 0; position: relative; overflow: hidden; }
+  .tabs {
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
 
-  .markmap { position: relative; height: 100%; }
+  .tabs a {
+    display: inline-block;
+    padding: 0.3rem 0.1rem 0.5rem;
+    font-family: Spectral, Georgia, serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tabs a.active {
+    color: var(--ink);
+    border-bottom-color: var(--kumkum);
+  }
+
+  main { flex: 1 1 auto; min-height: 0; position: relative; overflow: hidden; padding: 1rem; }
+
+  .markmap {
+    position: relative;
+    height: 100%;
+    background: rgba(20, 16, 14, 0.35);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  }
   .markmap > svg { width: 100%; height: 100%; }
 
   .markmap-foreign {
@@ -91,6 +125,10 @@
   <p class="eyebrow">Aspect · Shape · Form</p>
   <h1><span class="om" aria-hidden="true">ॐ</span>I am Brahman <span class="om" aria-hidden="true">ॐ</span></h1>
   <p class="hint">Click a node to fold or unfold · drag to pan · scroll to zoom</p>
+  <ul class="tabs">
+    <li><a href="/" class="active">Yatra</a></li>
+    <li><a href="/shaivism.html">Shaivism</a></li>
+  </ul>
 </header>
 
 <main>

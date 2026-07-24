@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaivism</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ash:      #ffffff;
+    --ink:      #ffffff;
+    --ink-soft: #ffffff;
+    --kumkum:   #A8322D;
+    --rule:     #BFC4BB;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background-color: var(--ash);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/images/Gemini_Generated_Image_kbb2e1kbb2e1kbb2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: Spectral, Georgia, serif;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85), 0 0 12px rgba(0, 0, 0, 0.5);
+  }
+
+  body { display: flex; flex-direction: column; }
+
+  header {
+    flex: 0 0 auto;
+    padding: 1.4rem 1.6rem 1.1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 0.35rem;
+  }
+
+  h1 {
+    font-family: Spectral, Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .om {
+    color: var(--kumkum);
+    font-size: 1em;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tabs a {
+    display: inline-block;
+    padding: 0.3rem 0.1rem 0.5rem;
+    font-family: Spectral, Georgia, serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tabs a.active {
+    color: var(--ink);
+    border-bottom-color: var(--kumkum);
+  }
+
+  main {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    padding: 2.2rem 1.6rem 4rem;
+  }
+
+  .prose {
+    width: 100%;
+    max-width: 42rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    background: rgba(20, 16, 14, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.8rem 2.2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 2rem 0 0.8rem;
+  }
+  .prose h1 { font-size: 1.9rem; }
+  .prose h2 { font-size: 1.5rem; }
+  .prose h3 { font-size: 1.2rem; }
+  .prose h4 { font-size: 1.05rem; }
+  .prose h1:first-child, .prose h2:first-child { margin-top: 0; }
+
+  .prose p { margin: 0 0 1.1rem; }
+  .prose ul, .prose ol { margin: 0 0 1.1rem; padding-left: 1.4rem; }
+  .prose li { margin: 0.3rem 0; }
+  .prose blockquote {
+    margin: 0 0 1.1rem;
+    padding: 0.2rem 1rem;
+    border-left: 2px solid var(--kumkum);
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .prose code {
+    font-family: 'IBM Plex Sans', monospace;
+    font-size: 0.9em;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+  .prose pre {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  .prose pre code { background: none; padding: 0; }
+  .prose a { color: var(--ink); text-decoration-color: var(--kumkum); }
+  .prose hr { border: none; border-top: 1px solid var(--rule); margin: 2rem 0; }
+
+  @media (max-width: 640px) {
+    header { padding: 1rem 1.1rem 0.85rem; }
+    main { padding: 1.6rem 1.1rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Aspect · Shape · Form</p>
+  <h1><span class="om" aria-hidden="true">ॐ</span>I am Brahman <span class="om" aria-hidden="true">ॐ</span></h1>
+  <ul class="tabs">
+    <li><a href="/">Yatra</a></li>
+    <li><a href="/shaivism.html" class="active">Shaivism</a></li>
+  </ul>
+</header>
+
+<main>
+  <article class="prose" id="content"></article>
+</main>
+
+<script type="text/template" id="markdown-source">
+# Shaivism
+*Aum Namah Shivaya*
+## Foundational Points
+1. Your self is consciousness, not your body.
+2. Paramashiva is universal consciousness and the ultimate reality.
+3. There are elements which cause this identification with body and limited knowledge.
+4. Limited knowledge causes our mind to become associated with the body, the manifest world, and this limits us.  
+5. Reality/manifest world is created from Paramashiva through 36 tattvas (elements). The first 5 are pure (shuddha) — just the play of consciousness. The remaining 31 are impure (ashuddha) and constitute the field of bondage, from Maya down through the physical body itself.
+
+## The 36 Tattvas
+
+### Pure tattvas (1–5) — no bondage yet
+
+1. Shiva — pure consciousness (prakasha)
+2. Shakti — its power (vimarsha)
+3. Sadashiva (Sadakhya) — (iccha, will predominant)
+4. Ishwara — (jnana, knowledge predominant)
+5. Shuddhavidya (Sadvidya) — (kriya, action predominat)
+
+### Maya and the five kanchukas (6–11)
+
+Where bondage begins, contracting the universal "I" into a limited individual.
+
+6. Maya — the veiling power that creates a sense of separation/difference
+7. Kala — limits universal agency/creativity into a small capacity to act
+8. Vidya — limits omniscience into partial knowledge
+9. Raga — limits fullness into desire/attachment for particular things
+10. Kala (time) — limits eternity into time (past/present/future)
+11. Niyati — limits all-pervasiveness into causal restriction (space, necessity)
+
+### Purusha–Prakriti (12–13)
+
+12. Purusha — the now-limited individual soul
+13. Prakriti — primordial nature, root of the mind-body-world
+
+### Antahkarana — internal organs (14–16)
+
+14. Manas — mind (coordinates senses)
+15. Buddhi — intellect/discernment
+16. Ahamkara — ego, "I-maker"
+
+### Jnanendriyas — five senses of perception (17–21)
+
+17. Shrotra (hearing)
+18. Tvak (touch)
+19. Chakshu (sight)
+20. Rasana (taste)
+21. Ghrana (smell)
+
+### Karmendriyas — five organs of action (22–26)
+
+22. Vak (speech)
+23. Pani (hands)
+24. Pada (feet)
+25. Payu (excretion)
+26. Upastha (procreation)
+
+### Tanmatras — five subtle elements (27–31)
+
+27. Shabda (sound)
+28. Sparsha (touch)
+29. Rupa (form)
+30. Rasa (taste)
+31. Gandha (smell)
+
+### Mahabhutas — five gross elements, the physical body/world itself (32–36)
+
+32. Akasha (space)
+33. Vayu (air)
+34. Tejas/Agni (fire)
+35. Apas/Jala (water)
+36. Prithvi (earth)
+
+## Creation of Universe
+
+In Trika/Kashmir Shaivism, sound (shabda) is not something added to creation after the fact — consciousness and sound are inseparable, and the 36 tattvas unfold *as* a descent through subtler-to-grosser levels of sound.
+
+### Shabda and Spanda
+
+Shakti (tattva 2), the power of Shiva, is never static — she is inherently vibratory. This primordial throb is called **spanda**. Before any "thing" exists, there is this vibration within consciousness itself: Shiva knowing himself as "I" (vimarsha). That self-referral throb is the seed of both sound and creation — they are the same event. This is why the tradition calls the ultimate reality **Shabda Brahman** (the Absolute as sound/word), and the first tattvas (Shiva–Shakti–Sadashiva–Ishvara–Shuddhavidya) are really this vibration becoming progressively more differentiated.
+
+### The four levels of Vak (speech)
+
+Creation descends through four levels of "word," each corresponding to a band of tattvas:
+
+1. **Para Vak** ("supreme word") — the undivided vibration at the level of Shiva–Shakti (tattvas 1–2). Not sound as we'd recognize it — pure potential, consciousness resonating with itself before any split into speaker/spoken.
+2. **Pashyanti** ("seeing" word) — the first stirring toward differentiation, at Sadashiva–Ishvara–Shuddhavidya (tattvas 3–5). The "I" and "this" begin to separate but are still seen as a single intuitive flash, not yet parceled into concepts.
+3. **Madhyama** ("middle" word) — subtle, mental sound. From Maya through the kanchukas, Purusha, Prakriti, and the antahkarana (tattvas 6–16), the vibration becomes thought — the unspoken inner speech of the mind, formed but not yet uttered.
+4. **Vaikhari** ("gross/uttered" word) — the level of the senses, organs of action, subtle elements, and the five gross elements (tattvas 17–36). Vibration hardens into audible sound and, further, into the physical world itself — space, air, fire, water, earth are the most condensed, "frozen" form of the original vibration.
+
+So the tanmatra **Shabda** (sound, tattva 27) is not incidental — it is the subtle template from which the grosser elements (Akasha, Vayu, Agni, Apas, Prithvi) precipitate. Sound is the bridge between mind and matter, the last subtle rung before the world becomes solid.
+
+### Matrika Shakti — the alphabet as the body of creation
+
+The Sanskrit phonemes (the varnamala, A to Ksha) are called **Matrika**, "the little mothers," because each letter is held to be the sound-form of a specific tattva or stage of emanation. Uttering the alphabet in sequence — vowels first (the subtler, Shiva/Shakti end), then the consonant classes (progressively grosser, down to the last sounds associated with Prithvi) — retraces the entire descent from pure consciousness to solid earth. This is the basis of mantra: a mantra is a compressed sound-form of a tattva or deity, and repeating it (japa) re-enacts the creative vibration in reverse, drawing awareness back up through Vaikhari → Madhyama → Pashyanti → Para, toward recognition (pratyabhijna) of Shiva.
+
+#### The 50 Matrika letters
+
+**Vowels (16)** — subtle, Para/Pashyanti level, the pure tattvas:
+अ a, आ ā, इ i, ई ī, उ u, ऊ ū, ऋ ṛ, ॠ ṝ, ऌ ḷ, ॡ ḹ, ए e, ऐ ai, ओ o, औ au, अं aṃ (anusvara), अः aḥ (visarga)
+
+**Consonants (33)**, in five classes (vargas) plus semivowels/sibilants:
+
+- *Ka-varga* (velar): क ka, ख kha, ग ga, घ gha, ङ ṅa
+- *Ca-varga* (palatal): च ca, छ cha, ज ja, झ jha, ञ ña
+- *Ṭa-varga* (retroflex): ट ṭa, ठ ṭha, ड ḍa, ढ ḍha, ण ṇa
+- *Ta-varga* (dental): त ta, थ tha, द da, ध dha, न na
+- *Pa-varga* (labial): प pa, फ pha, ब ba, भ bha, म ma
+- *Semivowels*: य ya, र ra, ल la, व va
+- *Sibilants*: श śa, ष ṣa, स sa
+- *Aspirate*: ह ha
+
+**Final conjunct**: क्ष kṣa (the 50th letter, closing the alphabet)
+
+#### Association with the elements
+
+Sanskrit's place of articulation runs from the open throat down to the closed lips — a physical mirror of the descent from Akasha (space) to Prithvi (earth). Each consonant varga is traditionally tied to one gross element on that basis:
+
+| Varga | Place of articulation | Element |
+|---|---|---|
+| Ka-varga (ka kha ga gha ṅa) | Guttural (open throat) | Akasha — space |
+| Ca-varga (ca cha ja jha ña) | Palatal | Vayu — air |
+| Ṭa-varga (ṭa ṭha ḍa ḍha ṇa) | Retroflex | Tejas/Agni — fire |
+| Ta-varga (ta tha da dha na) | Dental | Apas — water |
+| Pa-varga (pa pha ba bha ma) | Labial (lips) | Prithvi — earth |
+
+The vowels sit above this, at the pure-tattva end (Shiva through Shuddhavidya), with the anusvara/visarga marking the bindu — the point of contraction where creation tips over into Maya and the descent into the elements begins. The semivowels, sibilants, ha, and kṣa sit at the tanmatra level, the subtle templates just above the gross elements they give rise to.
+
+This place-of-articulation logic is also why each element has a single-syllable seed mantra (bija), used in bhuta-shuddhi and nyasa practice:
+
+| Element | Bija |
+|---|---|
+| Akasha (space) | हं Haṃ |
+| Vayu (air) | यं Yaṃ |
+| Tejas/Agni (fire) | रं Raṃ |
+| Apas (water) | वं Vaṃ |
+| Prithvi (earth) | लं Laṃ |
+
+## Shiva Sutras
+Above readings are from Shiva sturas. These sutras can transform you in body, mind, and self-understanding, read **Shiva Sutras** by Ranjit Chaudhri to continue your journey.
+</script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/lib/marked.umd.min.js"></script>
+<script>
+  const raw = document.getElementById('markdown-source').textContent;
+  document.getElementById('content').innerHTML = marked.parse(raw);
+</script>
+
+</body>
+</html>

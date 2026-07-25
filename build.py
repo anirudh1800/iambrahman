@@ -16,5 +16,5 @@ def build(md_name, template_name, placeholder, output_name):
     print(f"Built public/{output_name} from templates/{template_name} + {md_name}")
 
 
-build("brahman.md", "index.html", "{{MARKMAP_CONTENT}}", "index.html")
-build("shaivism.md", "shaivism.html", "{{MARKDOWN_CONTENT}}", "shaivism.html")
+build("text/brahman.md", "index.html", "{{MARKMAP_CONTENT}}", "index.html")
+build("text/shaivism.md", "shaivism.html", "{{MARKDOWN_CONTENT}}", "shaivism.html")

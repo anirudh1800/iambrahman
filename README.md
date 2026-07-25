@@ -1,6 +1,6 @@
 # Brahman Mindmap — Cloudflare Workers
 
-Static site. The markdown source lives in `brahman.md`; `build.py` inlines it into
+Static site. The markdown source lives in `text/brahman.md`; `build.py` inlines it into
 `templates/index.html` to produce `public/index.html`, which markmap renders in
 the browser. No server-side code — the build step just concatenates two static
 files before deploy.
@@ -9,7 +9,7 @@ files before deploy.
 brahman-map/
 ├── wrangler.jsonc
 ├── build.py
-├── brahman.md
+├── text/brahman.md
 ├── templates/
 │   └── index.html
 └── public/
@@ -20,7 +20,7 @@ brahman-map/
 
 ```bash
 npm install -D wrangler          # optional; npx will fetch it otherwise
-python3 build.py                 # inline brahman.md into public/index.html
+python3 build.py                 # inline text/brahman.md into public/index.html
 npx wrangler login
 npx wrangler deploy
 ```
@@ -42,7 +42,7 @@ zone is already on Cloudflare.
 
 ## Editing the map
 
-Edit `brahman.md`, run `python3 build.py` to regenerate `public/index.html`
+Edit `text/brahman.md`, run `python3 build.py` to regenerate `public/index.html`
 (or just let `deploy.sh` do it), then redeploy. Don't edit `public/index.html`
 directly — it's overwritten on every build.
 
